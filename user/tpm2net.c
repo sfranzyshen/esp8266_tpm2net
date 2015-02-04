@@ -25,7 +25,7 @@ static void ICACHE_FLASH_ATTR tpm2net_recv(void *arg, char *pusrdata, unsigned s
 	}
 }
 
-void tpm2net_init() {
+void ICACHE_FLASH_ATTR tpm2net_init() {
 	static struct espconn tpm2conn;
 	static esp_udp tpm2udp;
 

@@ -23,16 +23,12 @@ FOLDERPREFIX:=$(GCC_FOLDER)/root/bin
 PREFIX:=$(FOLDERPREFIX)/xtensa-lx106-elf-
 CC:=$(PREFIX)gcc
 
-CFLAGS:=-mlongcalls -I$(SDK)/include -Imyclib -Iinclude -Iuser -O2 -I$(SDK)/include/
+CFLAGS:=-mlongcalls -O2 -I$(SDK)/include -Iinclude -Iuser
 
 LDFLAGS_CORE:=\
 	-nostdlib \
 	-Wl,--relax -Wl,--gc-sections \
-	-L$(XTLIB) \
-	-L$(XTGCCLIB) \
-	$(SDK)/lib/liblwip.a \
-	$(SDK)/lib/libssl.a \
-	$(SDK)/lib/libupgrade.a \
+	-L$ $(SDK)/lib/liblwip.a \
 	$(SDK)/lib/libnet80211.a \
 	$(SDK)/lib/liblwip.a \
 	$(SDK)/lib/libwpa.a \
@@ -48,7 +44,7 @@ LINKFLAGS:= \
 	-B$(XTLIB)
 
 $(TARGET_OUT) : $(SRCS)
-	$(PREFIX)gcc $(CFLAGS) $^  -flto $(LINKFLAGS) -o $@
+	$(PREFIX)gcc $(CFLAGS) $^ -flto $(LINKFLAGS) -o $@
 
 $(FW_FILE_1): $(TARGET_OUT)
 	@echo "FW $@"
