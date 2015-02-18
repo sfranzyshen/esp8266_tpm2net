@@ -19,13 +19,13 @@ static void ICACHE_FLASH_ATTR tpm2net_recv(void *arg, char *pusrdata, unsigned s
             if (length >= framelength + 7 && data[6+framelength]==0x36) { // header end (packet stop)
                 if (numpackages == 0x01) { // no frame split found
                     unsigned char *frame = &data[6]; // pointer 'frame' to espconn's data (start of data)
-                    ws2812_out(frame, framelength); // send data to strip
+                    ws2812_strip(frame, framelength); // send data to strip
                 } else { //frame split is found
                     os_memcpy (&framebuffer[framebuffer_len], &data[6], framelength);
                     framebuffer_len += framelength;
                     if (packagenum == numpackages) { // all packets found 
                         unsigned char *frame = &framebuffer[0]; // pointer 'frame' framebuffer
-                        ws2812_out(frame, framebuffer_len); // send data to strip
+                        ws2812_strip(frame, framebuffer_len); // send data to strip
                         framebuffer_len = 0;
                     }
                 }
