@@ -3,7 +3,7 @@ This is a custom firmware for the esp8266 wifi module that will drive a strand o
 
 # How to connect hardware
 
-Connect GPIO_0 of ESP8266 to DATA.
+Connect GPIO_0 of ESP8266 to DATA. You should have a 100p cap across GPIO0 to GND.
 
 #UPDATE:2/17/2015
 (multiblock) split frame support has been added to the code and test have confirmed a 16x32 (512 RGB LEDS) matrix using the jinx led host software. http://www.esp8266.com/viewtopic.php?f=6&t=1441
