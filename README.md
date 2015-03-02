@@ -12,7 +12,11 @@ see this site from cnlohr: https://github.com/cnlohr/ws2812esp8266
 The work here has been possible because of the help from various projects ...
 
 https://github.com/cnlohr/ws2812esp8266
+
 https://github.com/Frans-Willem/EspLightNode
+
 https://github.com/popsodav/esp8266-lpd6803
+
 https://github.com/3s1d/WiFiYaala
+
 
