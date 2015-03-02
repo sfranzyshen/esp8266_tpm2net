@@ -7,3 +7,12 @@ WS2801, WS2811, WS2812, LPD6803, LPD8803, LPD8806, LPD8809, APA102, APA104, PCA9
 #How to build a build environment.
 
 see this site from cnlohr: https://github.com/cnlohr/ws2812esp8266
+
+#Thank You!
+The work here has been possible because of the help from various projects ...
+
+https://github.com/cnlohr/ws2812esp8266
+https://github.com/Frans-Willem/EspLightNode
+https://github.com/popsodav/esp8266-lpd6803
+https://github.com/3s1d/WiFiYaala
+
