@@ -3,6 +3,7 @@ esp8266_tpm2net is a custom firmware for the esp8266 wifi module that will drive
 
 #Planned Supported Chipsets
 WS2801, WS2811, WS2812, LPD6803, LPD8803, LPD8806, LPD8809, APA102, APA104, PCA9685, TLC5940, ...
+as well as a tpm2net to tpm2ser gateway with firmware(s) for the Arduino & Stm32f1 platforms using the FastLED library ...
 
 #How to build a build environment.
 
