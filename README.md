@@ -1,6 +1,7 @@
 #Notice: Currently, this is a work in progress ...
 it will not compile ... to find working examples of code (and firmware) ... please refer to this thread on the esp8266 fourm ... http://www.esp8266.com/viewtopic.php?f=6&t=1441 Thank You!
 
+[![Logo](http://goo.gl/w71QcJ)](https://github.com/sfranzyshen/esp8266_tpm2net)
 # esp8266_tpm2net
 esp8266_tpm2net is a custom firmware for the esp8266 wifi module that will drive a strand of addressable RGB LED pixels using the TPM2NET protocol.  We are planning support for the following chipsets ... as well as a tpm2net to tpm2ser gateway for use with other MCUs (arduino, stm32f1, ect.) connected via the UART. The goal for this project is to create a solid rgb led pixel driver based on the esp8266 wifi module for the control of 512-1024 rgb pixels.
 
